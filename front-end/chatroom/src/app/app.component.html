@@ -9,7 +9,7 @@
   </form>
   <div class="chat-box">
     <div *ngFor="let item of chat" [ngClass]="{'own':  userId === item.userId, 'others': userId !== item.userId }">
-      <p>{{item.message}} <span class="userId"> id:
+      <p>{{item.message}} <span *ngIf="userId !== item.userId" class="userId"> id:
           {{item.userId}}</span>
       </p>
     </div>
