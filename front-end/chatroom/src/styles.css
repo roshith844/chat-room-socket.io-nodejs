@@ -39,7 +39,43 @@ form {
 p {
     font-size: x-large;
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
+}
+
+.userId {
+    font-size: small;
+    color: black;
+    margin-right: 10px;
+    padding: 10px;
+    margin-left: 0;
+}
+
+
+.own {
+    background-color: rgb(152, 221, 241);
+    border-radius: 0% 20% 20% 20%;
+    padding: 4px;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    align-self: flex-start;
+}
+
+.others {
+    background-color: rgb(118, 221, 49);
+    border-radius: 20% 0% 20% 20%;
+    padding: 4px;
+    margin-bottom: 4px;
+    align-self: flex-end;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.chat-form {
+    align-self: flex-start;
 }

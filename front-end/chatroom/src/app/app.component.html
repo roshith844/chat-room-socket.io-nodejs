@@ -1,13 +1,17 @@
 <div class="chatroom-background">
-  <header > 
+  <header>
     <h1>Anonymous Chat Room</h1>
     <span class="subtitle">Talk with strangers</span>
   </header>
-  <form [formGroup]="sendMessageForm" (ngSubmit)="onSubmit()">
-   <input type="text" formControlName="message" placeholder="Enter Message">
-   <button type="submit">Send</button>
+  <form class="chat-form" [formGroup]="sendMessageForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="message" placeholder="Enter Message">
+    <button type="submit">Send</button>
   </form>
-  <div>
-    <p *ngFor="let item of chat">{{ item.message }}</p>
+  <div class="chat-box">
+    <div *ngFor="let item of chat" [ngClass]="{'own':  userId === item.userId, 'others': userId !== item.userId }">
+      <p>{{item.message}} <span class="userId"> id:
+          {{item.userId}}</span>
+      </p>
+    </div>
   </div>
 </div>
