@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+.chatroom-background {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    font-smooth: 2em;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.subtitle {
+    color: green;
+}
+
+input {
+    font-size: x-large;
+}
+
+button {
+    font-size: x-large;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 25%;
+}
+
+form {
+    margin-left: 20px;
+}
+
+p {
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
